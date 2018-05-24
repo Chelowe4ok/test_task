@@ -1,0 +1,39 @@
+@import "../styles/variables.scss";
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .sidenav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: $width-sidenav;
+    background: $color-primary--dark;
+
+    .toolbar {
+      color: $color-text;
+      border-bottom: 1px solid $color-primary--light;
+    }
+
+    .menu {
+      padding-left: 0;
+      width: 100%;
+
+      .menu-item {
+        list-style: none;
+        color: $color-text;
+        padding: 5px 15px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-primary--light;
+        }
+      }
+    }
+  }
+}
